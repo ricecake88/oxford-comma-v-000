@@ -13,7 +13,6 @@ def oxford_comma(array)
      end
      str = newArray.join(", ")
      str << ", and #{array[-1]}"
-     puts str
      return str
   end
 end

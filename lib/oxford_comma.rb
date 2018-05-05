@@ -6,14 +6,18 @@ def oxford_comma(array)
   elsif array.count == 3
      return "#{array[0]}, #{array[1]}, and #{array[2]}"
   elsif array.count > 3
-     newArray = []
-     indexes = (0..array.count-2).to_a
-     indexes.each do |i|
-       newArray.push(array[i])
-     end
-     str = newArray.join(", ")
-     str << ", and #{array[-1]}"
-     return str
+  #   newArray = []
+  #   indexes = (0..array.count-2).to_a
+  #   indexes.each do |i|
+  #     newArray.push(array[i])
+  #   end
+  #   str = newArray.join(", ")
+  #   str << ", and #{array[-1]}"
+  #   return str
+    newArray = []
+    last_element = array.pop
+    newArray.join(', ')
+    newArray << ", and #{last_element}"
   end
 end
 

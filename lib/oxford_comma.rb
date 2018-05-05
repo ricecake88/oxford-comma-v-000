@@ -16,3 +16,6 @@ def oxford_comma(array)
     return array.join(", ")
   end
 end
+
+arr = ["this", "that", "other"]
+oxford_comma(arr)

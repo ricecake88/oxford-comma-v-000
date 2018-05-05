@@ -5,8 +5,8 @@ def oxford_comma(array)
      newArray = []
      indexes = (0..array.count-2).to_a
      i = 0
-     while (i < indexes)
-       newArray.push(array.index[indexes])
+     indexes.each do |i|
+       newArray.push(array.index[i])
      end
      str = newArray.join(", ")
      str << "and #{array[-1]}"

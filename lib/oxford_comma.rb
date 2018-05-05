@@ -6,7 +6,7 @@ def oxford_comma(array)
      indexes = (0..array.count-2).to_a
      i = 0
      indexes.each do |i|
-       newArray.push(array.index[i])
+       newArray.push(array[i])
      end
      str = newArray.join(", ")
      str << "and #{array[-1]}"

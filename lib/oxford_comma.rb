@@ -16,7 +16,7 @@ def oxford_comma(array)
   #   return str
     newArray = []
     last_element = array.pop
-    newArray.join(', ')
+    newArray = array.join(', ')
     newArray << ", and #{last_element}"
   end
 end

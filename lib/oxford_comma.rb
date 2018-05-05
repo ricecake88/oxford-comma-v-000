@@ -7,9 +7,8 @@ def oxford_comma(array)
      return "#{array[0]}, #{array[1]}, and #{array[2]}"
   elsif array.count > 3
      newArray = []
-     indexes = (0..array.count-1).to_a
+     indexes = (0..array.count-2).to_a
      indexes.each do |i|
-       puts i
        newArray.push(array[i])
      end
      str = newArray.join(", ")

@@ -9,7 +9,7 @@ def oxford_comma(array)
        newArray.push(array[i])
      end
      str = newArray.join(", ")
-     str << "and #{array[-1]}"
+     str << " and #{array[-1]}"
      puts str
      
   else

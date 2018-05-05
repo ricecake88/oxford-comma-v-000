@@ -8,7 +8,6 @@ def oxford_comma(array)
   elseif array.count > 3
      newArray = []
      indexes = (0..array.count-1).to_a
-     i = 0
      indexes.each do |i|
        newArray.push(array[i])
      end

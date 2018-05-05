@@ -18,6 +18,6 @@ def oxford_comma(array)
   end
 end
 
-arr = ["this", "that", "boo" "other"]
+arr = ["this", "that", "boo", "other"]
 str = oxford_comma(arr)
 puts str
